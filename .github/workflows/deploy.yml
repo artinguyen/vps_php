@@ -10,7 +10,6 @@ jobs:
       env:
         HOST: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
@@ -20,6 +19,5 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
         script: ls
