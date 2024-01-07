@@ -15,7 +15,7 @@ jobs:
         source: "."
         target: "/var/www/vps_tutorial_2/public_html"
     - name: Executing remote command
-      uses: appleboy/ssh-action@v0.1.4
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
